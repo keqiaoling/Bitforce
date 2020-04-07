@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+android {
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.taiyun.CoinMars"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName '1.0.11'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    //关闭打包错误提示
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            jniLibs.srcDirs = ['libs']
+        }
+
+
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.jakewharton:butterknife:10.0.0' /*注解绑定id库*/
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'//强大灵活的RecyclerView
+    implementation 'com.github.bumptech.glide:glide:4.7.1'/*图片加载库*/
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'/*Android的TabLayout库*/
+    implementation 'com.zhy:base-rvadapter:3.0.3'/*万能适配器*/
+    implementation 'com.google.code.gson:gson:2.8.5'//Gson 库 2.6.2
+    implementation 'com.isseiaoki:simplecropview:1.1.4'//裁剪图片
+    implementation 'com.google.zxing:core:3.2.1'/*识别二维码和生成二维库*/
+    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    implementation 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'//RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'//RxAndroid
+    implementation 'q.rorbin:badgeview:1.1.2' //提示点依赖
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'//水平进度条
+    implementation 'cn.dreamtobe.kpswitch:library:1.6.0'//解决键盘切换闪屏问题库
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'//网络请求库
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1' //cookie管理器
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'//动态申请权限库
+
+    implementation 'id.zelory:compressor:2.1.0' //图片压缩库
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'//图片查看库
+    implementation 'com.android.support:multidex:1.0.3' //解决65k方法错误，依赖库
+    implementation 'commons-lang:commons-lang:2.6'//StringUtils库
+    implementation 'org.greenrobot:eventbus:3.1.1'//线程管理库
+    implementation 'com.contrarywind:Android-PickerView:3.2.6'
+    implementation 'org.jsoup:jsoup:1.10.1'//使网页适配屏幕，防止图片太大
+
+    implementation 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'/*livedata*/
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    implementation 'com.android.support:support-v4:28.1.1'
+    implementation 'com.android.support:design:28.1.1'
+    implementation 'com.android.support:appcompat-v7:28.1.1'
+    implementation 'com.android.support:recyclerview-v7:28.1.1'
+    implementation 'com.android.support:cardview-v7:28.1.1'//卡片布局
+    implementation 'pub.devrel:easypermissions:1.3.0'
+    implementation 'com.github.dongjunkun:DropDownMenu:1.0.4'
+    implementation 'com.alibaba:fastjson:1.1.55.android'//阿里巴巴JSON
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'//最新版本
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.0.4@aar'//圆角tablayout
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.android.support:design:28.1.1'
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'//垂直tablayout
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+    implementation 'io.github.meetsl:SCardView:1.0'
+    implementation 'com.youth.banner:banner:1.4.9'
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoSizeMaxTextSize="@dimen/sp_16"
+            android:autoSizeMinTextSize="@dimen/sp_10"
+            android:autoSizeTextType="uniform"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="@string/tab_zp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/text_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_4"
+            android:background="@drawable/tab_chanpin_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

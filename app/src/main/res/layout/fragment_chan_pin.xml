@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.myapplication.chanpin.ChanPinFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:text="@string/tab_cp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/sy_linesbg"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        app:tabBackground="@drawable/tabselector"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        app:tabIndicatorHeight="@dimen/dp_0"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/jiajian_bg"/>
+</LinearLayout>

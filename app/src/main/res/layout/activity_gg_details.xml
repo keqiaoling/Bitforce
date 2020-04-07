@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.myapplication.shouye.activity.GgDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:src="@mipmap/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_17"
+            android:textColor="@color/black"
+            android:text="【202006期算力租赁合约开放销售】"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/sy_linesbg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="@dimen/dp_20"
+        android:text="尊敬的BitForce用户：\n
+您好！
+\n
+感谢您一直以来对BitForce点滴算力的信任与支持。第五期AntminerSI7系列360天算力租赁合约已截止销售。因近期币价行情影响及矿机生 产线已恢复正常，第六期算力单价将作调整，
+第六期的AntminerSI7系列360天算力租赁合约销售如下，
+\n
+销售截止：2020年4月14日
+上架时间：2020年4月18日
+算力单价：30USDT/T
+\n
+我们将一如既往的以高质量的产品和优质的服务为您的矿机保驾护航，点滴算力感谢您的支 持与理解。
+
+\n
+特此公告，
+\n
+BitForce 团队
+\n
+2020/03/28
+"/>
+</LinearLayout>

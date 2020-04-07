@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--价格红-->
+    <color name="colorPriceRed">#54aa22</color>
+    <!--价格绿-->
+    <color name="colorPriceGreen">#F96A66</color>
+    <color name="dlbj">#F4F4F4</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="anniu_black">#333333</color>
+    <color name="line">#40000000</color>
+    <color name="cengse">#F9C229</color>
+    <color name="daocengse">#F5BF21</color>
+    <color name="huise">#999999</color>
+    <color name="huise_b">#666666</color>
+    <color name="ed_huise">#D8D8D8</color>
+    <color name="sy_linebg">#ECECEC</color>
+    <color name="sy_bg">#FAFAFA</color>
+    <color name="sy_linesbg">#ffEEEEEE</color>
+    <color name="sy_yinyin">#29999999</color>
+    <color name="jiajian_bg">#F7F8FA</color>
+    <color name="toumin">#00000000</color>
+    <color name="pop_bg">#55000000</color>
+    <color name="lanse">#2989EB</color>
+    <color name="zanwu">#B9C2CB</color>
+    <color name="line_jieshu">#DDDDDD</color>
+    <color name="wk_bg">#FCD511</color>
+    <color name="yinyin">#29999999</color>
+    <color name="kuangg">#C3C3C3</color>
+    <color name="red">#E81431</color>
+</resources>

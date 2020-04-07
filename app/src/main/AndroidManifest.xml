@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".ZgwApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".wode.ResetMimaActivity"></activity>
+        <activity android:name=".wode.SheZhiActivity" />
+        <activity android:name=".wode.YaoQingActivity" />
+        <activity android:name=".wode.WenTiActivity" />
+        <activity android:name=".wode.ZiChanActivity" />
+        <activity android:name=".wode.TiBiActivity" />
+        <activity android:name=".wode.ChongZhiActivity" />
+        <activity android:name=".yinyong.JfHuZhuanActivity" />
+        <activity android:name=".yinyong.JfYueBaoActivity" />
+        <activity android:name=".yinyong.JfDuiHuanActivity" />
+        <activity android:name=".yinyong.HuiYuanActivity" />
+        <activity android:name=".yinyong.GetJiFenActivity" />
+        <activity android:name=".wakuang.SuanLiDetailsActivity" />
+        <activity android:name=".shouye.activity.GgDetailsActivity" />
+        <activity android:name=".shouye.activity.GongGaoActivity" />
+        <activity android:name=".shouye.activity.YiJianActivity" />
+        <activity android:name=".shouye.activity.KjDetailsActivity" />
+        <activity android:name=".base.CompatStatusBarActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".begin.activity.RegisterActivity" />
+        <activity android:name=".begin.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
