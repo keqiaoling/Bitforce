@@ -33,7 +33,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
-
+//略略略
 
     @BindView(R.id.viewPager)
     ViewPager viewPager;
